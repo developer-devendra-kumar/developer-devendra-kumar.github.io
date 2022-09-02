@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.11ec7bb4.css",
-    "main.js": "/portfolio/static/js/main.4b652cad.js",
-    "static/media/devendra-resume-updated.pdf": "/portfolio/static/media/devendra-resume-updated.2f2278e45085c1a24d6e.pdf",
-    "static/media/dev-logo.svg": "/portfolio/static/media/dev-logo.fec4f17a97e4db6ea30d9503a69a1911.svg",
-    "index.html": "/portfolio/index.html",
-    "main.11ec7bb4.css.map": "/portfolio/static/css/main.11ec7bb4.css.map",
-    "main.4b652cad.js.map": "/portfolio/static/js/main.4b652cad.js.map"
+    "main.css": "/static/css/main.11ec7bb4.css",
+    "main.js": "/static/js/main.c6d3e8ca.js",
+    "static/media/devendra-resume-updated.pdf": "/static/media/devendra-resume-updated.2f2278e45085c1a24d6e.pdf",
+    "static/media/dev-logo.svg": "/static/media/dev-logo.fec4f17a97e4db6ea30d9503a69a1911.svg",
+    "index.html": "/index.html",
+    "main.11ec7bb4.css.map": "/static/css/main.11ec7bb4.css.map",
+    "main.c6d3e8ca.js.map": "/static/js/main.c6d3e8ca.js.map"
   },
   "entrypoints": [
     "static/css/main.11ec7bb4.css",
-    "static/js/main.4b652cad.js"
+    "static/js/main.c6d3e8ca.js"
   ]
 }
