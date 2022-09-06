@@ -1,15 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.11ec7bb4.css",
-    "main.js": "/static/js/main.f641b811.js",
+    "main.css": "/static/css/main.8571761d.css",
+    "main.js": "/static/js/main.3265dc38.js",
+    "static/media/sunrise-adjava.jpg": "/static/media/sunrise-adjava.84e8589ef43065eb74b3.jpg",
+    "static/media/sunrise-core-java.jpg": "/static/media/sunrise-core-java.64e9d26ecb44412cfcec.jpg",
+    "static/media/netcamp-COIT.jpg": "/static/media/netcamp-COIT.ddc02ee6df8cdb4f119a.jpg",
+    "static/media/sunrise-COIT.jpg": "/static/media/sunrise-COIT.1516f828aff064f26d79.jpg",
+    "static/media/netcamp-NM&WD.jpg": "/static/media/netcamp-NM&WD.5314fc6865b63d2010ed.jpg",
+    "static/media/netcamp-android.jpg": "/static/media/netcamp-android.421c159ebfb802f79cbf.jpg",
+    "static/media/js-cert.jpeg": "/static/media/js-cert.e3632efe5bfbb1811053.jpeg",
+    "static/media/sololearn-SQL_certificate.jpg": "/static/media/sololearn-SQL_certificate.2fe0ce98ab98a3fbc0e2.jpg",
+    "static/media/HTML_certificate.jpg": "/static/media/HTML_certificate.a8ded07c9a065fbd2318.jpg",
+    "static/media/JavaScript_certificate.jpg": "/static/media/JavaScript_certificate.6835667c93403d528cc1.jpg",
+    "static/media/sololearn-Java_certificate.jpg": "/static/media/sololearn-Java_certificate.2c87dee0cd47b528c5d0.jpg",
+    "static/media/sololearn-PHP_certificate.jpg": "/static/media/sololearn-PHP_certificate.37b201969d7eae59208f.jpg",
     "static/media/devendra-resume-updated-5-sept.pdf": "/static/media/devendra-resume-updated-5-sept.a1be53d40062f75899e6.pdf",
     "static/media/dev-logo.svg": "/static/media/dev-logo.fec4f17a97e4db6ea30d9503a69a1911.svg",
     "index.html": "/index.html",
-    "main.11ec7bb4.css.map": "/static/css/main.11ec7bb4.css.map",
-    "main.f641b811.js.map": "/static/js/main.f641b811.js.map"
+    "main.8571761d.css.map": "/static/css/main.8571761d.css.map",
+    "main.3265dc38.js.map": "/static/js/main.3265dc38.js.map"
   },
   "entrypoints": [
-    "static/css/main.11ec7bb4.css",
-    "static/js/main.f641b811.js"
+    "static/css/main.8571761d.css",
+    "static/js/main.3265dc38.js"
   ]
 }
