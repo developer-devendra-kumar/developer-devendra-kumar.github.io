@@ -88,6 +88,10 @@ export const WorkHistory = (props: WorkHistoryProps) => {
           see progress at run time. Utility to send email where user provide a
           email template and CSV with user's details. Rate change comms, Rate
           Change Automation, Collateral search.
+          <br />
+          <br />
+          Technologies used Like HTML + CSS, SCSS, Angular 10, Javascript,
+          Typescript, Socket.io, NodeJs, ReactJs, Google Maps, Docker.
         </StyledOrganizationWorkDesc>
         <StyledOrganizationName>
           Front End Developer at Gateway Software Solutions PVT. LTD., New Delhi
@@ -99,7 +103,21 @@ export const WorkHistory = (props: WorkHistoryProps) => {
           Created Angular based front end from scratch where i built things like
           multi language app, payment gateway integration, Social login, Google
           maps integration, Google charts integration, Google analytics
-          integration
+          integration, Google Ads.
+          <br />
+          <br />
+          Technologies used Like HTML + CSS, SCSS, Angular 5+, Javascript,
+          Typescript, AWS S3, Apache 2, D3 Maps, Angular Material, Bootstrap,
+          Razor Pay (Payment Gateway).
+          <br />
+          <br />
+          Worked on Java web applications where i was responsible to maintain
+          and add new features to the application.
+          <br />
+          <br />
+          Technologies used Like JAVA, HTML + CSS, JSP, AWS S3, Apache 2, Spring
+          framework, Hibernate framework, Maven, jQuery, MySQL, DB2, Junit,
+          Jwebunit, Apache Tomcat.
         </StyledOrganizationWorkDesc>
       </StyledDescriptionText>
     </StyledAboutContainer>
