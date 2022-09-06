@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { theme } from "../../theme/app-theme";
 import { PrimaryButton } from "../Buttons/primary-button";
-import resumeFile from "../../assets/files/devendra-resume-updated.pdf";
+import resumeFile from "../../assets/files/devendra-resume-updated-5-sept.pdf";
 
 const StyledIntroContainer = styled.div`
   width: 100%;

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { theme } from "../../theme/app-theme";
 import DevLogo from "../../assets/images/dev-logo.svg";
 import { PrimaryButton } from "../Buttons/primary-button";
-import resumeFile from "../../assets/files/devendra-resume-updated.pdf";
+import resumeFile from "../../assets/files/devendra-resume-updated-5-sept.pdf";
 import { useEffect, useState } from "react";
 import "./header.css";
 
@@ -76,7 +76,7 @@ const StyledHeaderLink = styled.a`
 const StyledIcon = styled.span`
   font-size: 32px;
   transition: all;
-  z-index: 9;
+  z-index: 10;
 `;
 const StyledMobileMenuHolder = styled.div`
   width: 100%;
@@ -89,6 +89,7 @@ const StyledMobileMenuHolder = styled.div`
   background-color: ${theme.colors.navy};
   color: ${theme.colors.lightestslate};
   display: none;
+  z-index: 9;
 `;
 
 interface HeaderProps {}
@@ -100,12 +101,15 @@ export const Header = (props: HeaderProps) => {
   const handleMobileMenu = () => {
     setIsShowMobileMenu(!showMobileMenu);
     let mobileMenuHolder = document.getElementById("mobileMenu");
+    let bodyTag = document.getElementById("body");
     if (!showMobileMenu) {
       mobileMenuHolder?.classList.add("show");
       mobileMenuHolder?.classList.remove("hide");
+      if(bodyTag) bodyTag.style.overflow = "hidden";
     } else if (showMobileMenu) {
       mobileMenuHolder?.classList.add("hide");
       mobileMenuHolder?.classList.remove("show");
+      if (bodyTag) bodyTag.style.overflow = "auto";
     }
   };
 
@@ -164,7 +168,7 @@ export const Header = (props: HeaderProps) => {
               download={"resume.pdf"}
               target={"_blank"}
             >
-              <PrimaryButton text="Resume" padding="1rem 1.25rem" />
+              <PrimaryButton text="Resume" padding="1.25rem 1.5rem" fontSize="2.5rem"/>
             </StyledMobileLink>
           </StyledMobileLinks>
         </StyledMobileMenuHolder>
