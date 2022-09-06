@@ -1,7 +1,8 @@
-import { ReactNode } from "react";
+import { ReactNode, useState } from "react";
 import ReactDOM from "react-dom";
 import styled from "styled-components";
 import { theme } from "../../theme/app-theme";
+import "./modal.css";
 
 const StylesModalBackdrop = styled.div`
   position: fixed;
@@ -14,11 +15,6 @@ const StylesModalBackdrop = styled.div`
 `;
 
 const StyleCard = styled.div`
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
   padding: 15px;
   border-radius: 5px;
   background: ${theme.colors.white};
@@ -29,12 +25,25 @@ const StyleCard = styled.div`
   height: auto;
   @media ${theme.screens.LargeScreen} {
     width: 700px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   @media ${theme.screens.mediumScreen} {
     width: 500px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   @media ${theme.screens.smallScreen} {
-    width: 300px;
+    width: calc(100vw - 30px);
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    padding: 15px 15px 0px 15px;
+    border-radius: 10px 10px 0px 0px;
   }
 `;
 interface ModalProps {
@@ -45,7 +54,9 @@ interface ModalProps {
 }
 
 export const ModalBackdrop = () => {
-  return <StylesModalBackdrop />;
+  return (
+    <StylesModalBackdrop className="backdrop-animate-in" id="backDropModal" />
+  );
 };
 
 const ModalImage = styled.img`
@@ -75,13 +86,36 @@ const StyledFlexDiv = styled.div`
 `;
 
 export const ModalCard = (props: ModalProps) => {
+  const [isCloseClicked, setIsClosedClick] = useState(false);
+
+  const handleCloseClickAnimation = () => {
+    let modalDiv = document.getElementById("modalDiv");
+    let backDropModal = document.getElementById("backDropModal");
+    modalDiv?.classList.remove("modal-animate-in");
+    modalDiv?.classList.add("modal-animate-out");
+
+    backDropModal?.classList.remove("backdrop-animate-in");
+    backDropModal?.classList.add("backdrop-animate-out");
+    setIsClosedClick(true);
+  };
+
+  const handleAnimationEnd = () => {
+    if (isCloseClicked) {
+      props.onClose();
+    }
+  };
+
   return (
-    <StyleCard>
+    <StyleCard
+      id="modalDiv"
+      onAnimationEnd={handleAnimationEnd}
+      className="modal-animate-in"
+    >
       <StyledFlexDiv>
         <ModalMessage>{props.message}</ModalMessage>
         <StyledIcon
           className="material-symbols-rounded"
-          onClick={props.onClose}
+          onClick={handleCloseClickAnimation}
         >
           cancel
         </StyledIcon>

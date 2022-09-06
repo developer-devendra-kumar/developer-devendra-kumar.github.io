@@ -1,0 +1,94 @@
+.backdrop-animate-in {
+  animation: backdrop 500ms ease-in-out 0ms;
+  transition: all;
+}
+
+.modal-animate-in {
+  animation: modalIn 500ms ease-in-out 0ms;
+  transition: all;
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .modal-animate-in {
+    animation: modalInMobile 500ms ease-in-out 0ms;
+  }
+}
+
+.backdrop-animate-out {
+  animation: backdropOut 1s ease-in-out 0ms;
+  transition: all;
+}
+
+.modal-animate-out {
+  animation: modalOut 1s ease-in-out 0ms;
+  transition: all;
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .modal-animate-out {
+    animation: modalOutMobile 1s ease-in-out 0ms;
+  }
+}
+@keyframes backdropOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes modalOut {
+  0% {
+    top: 50%;
+    opacity: 1;
+  }
+  100% {
+    top: 0%;
+    opacity: 0;
+  }
+}
+
+@keyframes modalOutMobile {
+  0% {
+    bottom: 0%;
+    opacity: 1;
+  }
+  100% {
+    bottom: -100%;
+    opacity: 0;
+  }
+}
+
+@keyframes backdrop {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes modalIn {
+  0% {
+    top: 0%;
+    opacity: 0;
+  }
+  95% {
+    top: 55%;
+  }
+  100% {
+    top: 50%;
+    opacity: 1;
+  }
+}
+
+@keyframes modalInMobile {
+  0% {
+    bottom: -100%;
+    opacity: 0;
+  }
+  90% {
+    bottom: 5%;
+  }
+  100% {
+    bottom: 0%;
+    opacity: 1;
+  }
+}
